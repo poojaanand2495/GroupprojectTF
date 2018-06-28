@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:form="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Tfactor form</title>
+</head>
+<body>
+<h2>Tfactor Entry</h2>
+
+    <form action="#" form:action="@{/addemployee}" form:object="${employee}" method="post">
+
+        <p>Name: <input type="text" form:field="*{name}" /></p>
+        <p>Id: <input type="text" form:field="*{id}" /></p>
+        <p>Tfactor: <input type="text" form:field="*{tfactor}" /></p>
+        <p><input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
+
